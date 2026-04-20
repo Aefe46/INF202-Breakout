@@ -1,0 +1,215 @@
+<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="900" height="620" fill="#1e1e2e" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#cdd6f4">Breakout – Komponentendiagramm</text>
+  <text x="450" y="58" text-anchor="middle" font-size="12" fill="#6c7086">Software Engineering · INF202 · LibGDX · Java</text>
+  <line x1="40" y1="68" x2="860" y2="68" stroke="#313244" stroke-width="1"/>
+
+  <!-- ═══════════════════ LibGDX (External) ═══════════════════ -->
+  <g>
+    <rect x="40" y="90" width="180" height="120" rx="8" fill="#1e1e2e" stroke="#585b70" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <!-- component icon -->
+    <rect x="185" y="96" width="14" height="10" rx="2" fill="none" stroke="#585b70" stroke-width="1.2"/>
+    <rect x="181" y="99" width="6" height="3" rx="1" fill="#585b70"/>
+    <rect x="181" y="104" width="6" height="3" rx="1" fill="#585b70"/>
+    <!-- header -->
+    <rect x="40" y="90" width="180" height="28" rx="8" fill="#313244"/>
+    <rect x="40" y="104" width="180" height="14" fill="#313244"/>
+    <text x="130" y="108" text-anchor="middle" font-size="11" font-weight="bold" fill="#a6adc8">«external»</text>
+    <text x="130" y="126" text-anchor="middle" font-size="13" font-weight="bold" fill="#cdd6f4">LibGDX</text>
+    <!-- divider -->
+    <line x1="40" y1="136" x2="220" y2="136" stroke="#45475a" stroke-width="0.8"/>
+    <!-- content -->
+    <text x="52" y="152" font-size="10" fill="#6c7086">+ ApplicationAdapter</text>
+    <text x="52" y="166" font-size="10" fill="#6c7086">+ SpriteBatch</text>
+    <text x="52" y="180" font-size="10" fill="#6c7086">+ ShapeRenderer</text>
+    <text x="52" y="194" font-size="10" fill="#6c7086">+ ScreenUtils</text>
+  </g>
+
+  <!-- ═══════════════════ MAIN ═══════════════════ -->
+  <g>
+    <rect x="330" y="80" width="240" height="180" rx="8" fill="#1e1e2e" stroke="#89b4fa" stroke-width="2"/>
+    <!-- component icon -->
+    <rect x="532" y="86" width="16" height="12" rx="2" fill="none" stroke="#89b4fa" stroke-width="1.2"/>
+    <rect x="527" y="89" width="7" height="3.5" rx="1" fill="#89b4fa"/>
+    <rect x="527" y="95" width="7" height="3.5" rx="1" fill="#89b4fa"/>
+    <!-- header -->
+    <rect x="330" y="80" width="240" height="30" rx="8" fill="#313244"/>
+    <rect x="330" y="96" width="240" height="14" fill="#313244"/>
+    <text x="450" y="100" text-anchor="middle" font-size="11" fill="#89b4fa">«component»</text>
+    <text x="450" y="122" text-anchor="middle" font-size="15" font-weight="bold" fill="#cdd6f4">Main</text>
+    <!-- divider -->
+    <line x1="330" y1="134" x2="570" y2="134" stroke="#45475a" stroke-width="0.8"/>
+    <!-- fields -->
+    <text x="342" y="150" font-size="10" fill="#f38ba8">– sr : ShapeRenderer</text>
+    <text x="342" y="164" font-size="10" fill="#f38ba8">– paddle : Paddle</text>
+    <text x="342" y="178" font-size="10" fill="#f38ba8">– ball : Ball</text>
+    <text x="342" y="192" font-size="10" fill="#f38ba8">– bricks : Brick[15]</text>
+    <!-- divider -->
+    <line x1="330" y1="200" x2="570" y2="200" stroke="#45475a" stroke-width="0.8"/>
+    <!-- methods -->
+    <text x="342" y="216" font-size="10" fill="#a6e3a1">+ create() : void</text>
+    <text x="342" y="230" font-size="10" fill="#a6e3a1">+ render() : void</text>
+    <text x="342" y="244" font-size="10" fill="#a6e3a1">+ dispose() : void</text>
+  </g>
+
+  <!-- ═══════════════════ PADDLE ═══════════════════ -->
+  <g>
+    <rect x="40" y="360" width="200" height="185" rx="8" fill="#1e1e2e" stroke="#a6e3a1" stroke-width="1.5"/>
+    <!-- component icon -->
+    <rect x="202" y="366" width="16" height="12" rx="2" fill="none" stroke="#a6e3a1" stroke-width="1.2"/>
+    <rect x="197" y="369" width="7" height="3.5" rx="1" fill="#a6e3a1"/>
+    <rect x="197" y="375" width="7" height="3.5" rx="1" fill="#a6e3a1"/>
+    <!-- header -->
+    <rect x="40" y="360" width="200" height="30" rx="8" fill="#313244"/>
+    <rect x="40" y="376" width="200" height="14" fill="#313244"/>
+    <text x="140" y="380" text-anchor="middle" font-size="11" fill="#a6e3a1">«component»</text>
+    <text x="140" y="402" text-anchor="middle" font-size="15" font-weight="bold" fill="#cdd6f4">Paddle</text>
+    <!-- divider -->
+    <line x1="40" y1="414" x2="240" y2="414" stroke="#45475a" stroke-width="0.8"/>
+    <!-- fields -->
+    <text x="52" y="430" font-size="10" fill="#f38ba8">+ x : float</text>
+    <text x="52" y="444" font-size="10" fill="#f38ba8">+ y : float</text>
+    <text x="52" y="458" font-size="10" fill="#f38ba8">+ width : float = 100</text>
+    <text x="52" y="472" font-size="10" fill="#f38ba8">+ height : float = 15</text>
+    <!-- divider -->
+    <line x1="40" y1="480" x2="240" y2="480" stroke="#45475a" stroke-width="0.8"/>
+    <!-- methods -->
+    <text x="52" y="496" font-size="10" fill="#a6e3a1">+ Paddle()</text>
+    <text x="52" y="510" font-size="10" fill="#a6e3a1">+ draw(sr) : void</text>
+    <text x="52" y="524" font-size="10" fill="#89dceb">↔ INPUT: LEFT / RIGHT key</text>
+  </g>
+
+  <!-- ═══════════════════ BALL ═══════════════════ -->
+  <g>
+    <rect x="330" y="360" width="200" height="200" rx="8" fill="#1e1e2e" stroke="#fab387" stroke-width="1.5"/>
+    <!-- component icon -->
+    <rect x="492" y="366" width="16" height="12" rx="2" fill="none" stroke="#fab387" stroke-width="1.2"/>
+    <rect x="487" y="369" width="7" height="3.5" rx="1" fill="#fab387"/>
+    <rect x="487" y="375" width="7" height="3.5" rx="1" fill="#fab387"/>
+    <!-- header -->
+    <rect x="330" y="360" width="200" height="30" rx="8" fill="#313244"/>
+    <rect x="330" y="376" width="200" height="14" fill="#313244"/>
+    <text x="430" y="380" text-anchor="middle" font-size="11" fill="#fab387">«component»</text>
+    <text x="430" y="402" text-anchor="middle" font-size="15" font-weight="bold" fill="#cdd6f4">Ball</text>
+    <!-- divider -->
+    <line x1="330" y1="414" x2="530" y2="414" stroke="#45475a" stroke-width="0.8"/>
+    <!-- fields -->
+    <text x="342" y="430" font-size="10" fill="#f38ba8">+ x : float</text>
+    <text x="342" y="444" font-size="10" fill="#f38ba8">+ y : float</text>
+    <text x="342" y="458" font-size="10" fill="#f38ba8">+ speedX : float = 200</text>
+    <text x="342" y="472" font-size="10" fill="#f38ba8">+ speedY : float = -200</text>
+    <text x="342" y="486" font-size="10" fill="#f38ba8">+ radius : float = 10</text>
+    <!-- divider -->
+    <line x1="330" y1="494" x2="530" y2="494" stroke="#45475a" stroke-width="0.8"/>
+    <!-- methods -->
+    <text x="342" y="510" font-size="10" fill="#a6e3a1">+ Ball()</text>
+    <text x="342" y="524" font-size="10" fill="#a6e3a1">+ update(delta) : void</text>
+    <text x="342" y="538" font-size="10" fill="#a6e3a1">+ draw(sr) : void</text>
+    <text x="342" y="552" font-size="10" fill="#89dceb">↔ collision: Paddle, Brick, Wall</text>
+  </g>
+
+  <!-- ═══════════════════ BRICK ═══════════════════ -->
+  <g>
+    <rect x="620" y="360" width="240" height="185" rx="8" fill="#1e1e2e" stroke="#cba6f7" stroke-width="1.5"/>
+    <!-- component icon -->
+    <rect x="822" y="366" width="16" height="12" rx="2" fill="none" stroke="#cba6f7" stroke-width="1.2"/>
+    <rect x="817" y="369" width="7" height="3.5" rx="1" fill="#cba6f7"/>
+    <rect x="817" y="375" width="7" height="3.5" rx="1" fill="#cba6f7"/>
+    <!-- header -->
+    <rect x="620" y="360" width="240" height="30" rx="8" fill="#313244"/>
+    <rect x="620" y="376" width="240" height="14" fill="#313244"/>
+    <text x="740" y="380" text-anchor="middle" font-size="11" fill="#cba6f7">«component»</text>
+    <text x="740" y="402" text-anchor="middle" font-size="15" font-weight="bold" fill="#cdd6f4">Brick</text>
+    <!-- divider -->
+    <line x1="620" y1="414" x2="860" y2="414" stroke="#45475a" stroke-width="0.8"/>
+    <!-- fields -->
+    <text x="632" y="430" font-size="10" fill="#f38ba8">+ x : float</text>
+    <text x="632" y="444" font-size="10" fill="#f38ba8">+ y : float</text>
+    <text x="632" y="458" font-size="10" fill="#f38ba8">+ width : float = 80</text>
+    <text x="632" y="472" font-size="10" fill="#f38ba8">+ height : float = 25</text>
+    <text x="632" y="486" font-size="10" fill="#f38ba8">+ isAlive : boolean = true</text>
+    <!-- divider -->
+    <line x1="620" y1="494" x2="860" y2="494" stroke="#45475a" stroke-width="0.8"/>
+    <!-- methods -->
+    <text x="632" y="510" font-size="10" fill="#a6e3a1">+ Brick(x, y)</text>
+    <text x="632" y="524" font-size="10" fill="#a6e3a1">+ draw(sr) : void</text>
+    <text x="632" y="538" font-size="10" fill="#89dceb">isAlive = false → invisible</text>
+  </g>
+
+  <!-- ═══════════════════ ARROWS ═══════════════════ -->
+
+  <!-- LibGDX → Main (extends) -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#89b4fa" stroke-width="1.2"/>
+    </marker>
+    <marker id="arr-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#a6e3a1" stroke-width="1.2"/>
+    </marker>
+    <marker id="arr-o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#fab387" stroke-width="1.2"/>
+    </marker>
+    <marker id="arr-dash" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#585b70" stroke-width="1.2"/>
+    </marker>
+  </defs>
+
+  <!-- LibGDX → Main -->
+  <line x1="220" y1="148" x2="330" y2="148" stroke="#585b70" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arr-dash)"/>
+  <rect x="234" y="135" width="68" height="16" rx="4" fill="#1e1e2e"/>
+  <text x="268" y="147" text-anchor="middle" font-size="10" fill="#585b70">«extends»</text>
+
+  <!-- Main → Paddle -->
+  <path d="M 450 260 L 450 310 L 140 310 L 140 360" fill="none" stroke="#a6e3a1" stroke-width="1.5" marker-end="url(#arr-g)"/>
+  <rect x="260" y="296" width="36" height="16" rx="4" fill="#1e1e2e"/>
+  <text x="278" y="308" text-anchor="middle" font-size="10" fill="#a6e3a1">uses</text>
+
+  <!-- Main → Ball -->
+  <line x1="450" y1="260" x2="430" y2="360" stroke="#fab387" stroke-width="1.5" marker-end="url(#arr-o)"/>
+  <rect x="444" y="300" width="36" height="16" rx="4" fill="#1e1e2e"/>
+  <text x="462" y="312" text-anchor="middle" font-size="10" fill="#fab387">uses</text>
+
+  <!-- Main → Brick[] -->
+  <path d="M 450 260 L 450 310 L 740 310 L 740 360" fill="none" stroke="#cba6f7" stroke-width="1.5">
+    <title>Main uses Brick[]</title>
+  </path>
+  <polygon points="736,354 740,360 744,354" fill="#cba6f7"/>
+  <rect x="574" y="296" width="36" height="16" rx="4" fill="#1e1e2e"/>
+  <text x="592" y="308" text-anchor="middle" font-size="10" fill="#cba6f7">uses</text>
+
+  <!-- Ball ↔ Paddle collision -->
+  <line x1="330" y1="470" x2="240" y2="470" stroke="#f38ba8" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr-dash)"/>
+  <rect x="256" y="456" width="62" height="16" rx="4" fill="#1e1e2e"/>
+  <text x="287" y="468" text-anchor="middle" font-size="10" fill="#f38ba8">«collision»</text>
+
+  <!-- Ball ↔ Brick[] collision -->
+  <line x1="530" y1="470" x2="620" y2="470" stroke="#f38ba8" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr-dash)"/>
+  <rect x="546" y="456" width="62" height="16" rx="4" fill="#1e1e2e"/>
+  <text x="577" y="468" text-anchor="middle" font-size="10" fill="#f38ba8">«collision»</text>
+
+  <!-- ═══════════════════ LEGEND ═══════════════════ -->
+  <rect x="620" y="90" width="240" height="130" rx="8" fill="#181825" stroke="#313244" stroke-width="1"/>
+  <text x="740" y="112" text-anchor="middle" font-size="12" font-weight="bold" fill="#a6adc8">Legende</text>
+  <line x1="630" y1="120" x2="850" y2="120" stroke="#313244" stroke-width="0.8"/>
+
+  <line x1="638" y1="138" x2="668" y2="138" stroke="#89b4fa" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="678" y="142" font-size="10" fill="#a6adc8">extends (LibGDX)</text>
+
+  <line x1="638" y1="158" x2="668" y2="158" stroke="#a6e3a1" stroke-width="1.5"/>
+  <polygon points="665,154 669,158 665,162" fill="none" stroke="#a6e3a1" stroke-width="1"/>
+  <text x="678" y="162" font-size="10" fill="#a6adc8">uses (Main → Komp.)</text>
+
+  <line x1="638" y1="178" x2="668" y2="178" stroke="#f38ba8" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="678" y="182" font-size="10" fill="#a6adc8">«collision»</text>
+
+  <text x="638" y="202" font-size="10" fill="#f38ba8">– field</text>
+  <text x="700" y="202" font-size="10" fill="#a6e3a1">+ method()</text>
+
+  <!-- Footer -->
+  <text x="450" y="610" text-anchor="middle" font-size="10" fill="#45475a">INF202-Breakout · project_component.svg · de.ovgu.cs</text>
+
+</svg>
